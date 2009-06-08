@@ -53,6 +53,7 @@ namespace eval ::ims::qti {
     }
 
 
+
     Item ad_instproc render {} {} {
         set xml "<assessmentItem xsi:schemaLocation='http://www.imsglobal.org/xsd/imsqti_v2p0 imsqti_v2p0.xsd' identifier='[my identifier]' title='[my title]' adaptive='[my adaptive]' timeDependent='[my timeDependent]' label='[my label]' lang='[my lang]' toolName='[my toolName]' toolVersion='[my toolVersion]'>
         <responseDeclaration identifier='RESPONSE' cardinality='single' baseType='identifier'>            <correctResponse>            <value>ChoiceA</value>            </correctResponse>            </responseDeclaration></assessmentItem> "
@@ -89,9 +90,7 @@ namespace eval ::ims::qti {
     }
 
     Item ad_instproc render_itemBody {} {} {
-        ::ims::qti::itemBody {
-            my render_choiceInteraction
-        }
+        ::ims::qti::itemBody
     }
 
 

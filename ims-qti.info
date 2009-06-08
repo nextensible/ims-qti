@@ -8,7 +8,6 @@
     <singleton-p>t</singleton-p>
     <implements-subsite-p>f</implements-subsite-p>
     <inherit-templates-p>f</inherit-templates-p>
-    <auto-mount>/ims-qti</auto-mount>
 
     <version name="0.1d" url="http://openacs.org/repository/download/apm/ims-qti-0.1d.apm">
         <owner url="mailto:michael@aram.at">Michael Aram</owner>
